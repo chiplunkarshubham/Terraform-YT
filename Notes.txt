@@ -1,0 +1,37 @@
+IAC (Infrastructure as Code):	
+Using configuration files (JSON File Format) we can provision and manage the infrastructure.(JSON : JavaScript Object Notation) 
+Adv:Minimizes Human error, saves time and money
+
+Terraform : 
+It is an open-source IAC tool created by HashiCorp and it uses HCL (HashiCorp Configuration language)
+Write --> Plan --> Apply
+
+Providers:
+They are plugins used to interact with Cloud Vendors.
+Each Provider has its documentation describing its resource types and their arguments.
+There are more than 1500 providers in terraform.
+
+Terraform Installation:
+Install terraform binary file. It's an .exe file.
+In C Drive Create Folder : Terraform and place the terraform file inside it. Eg. C:\Terraform\terraform
+sysdm.cpl (CMD or Run Prompt) --> Advanced -->Environment Variables... --> A
+A --> In User variables for Admin --> Path --> Edit --> New --> Add path here C:\Terraform --> 3 times Ok 				(PEN)
+
+Atom Editor Installation:
+Google Atom and Install the latest version. Paste the file in the same folder. Eg. C:\Terraform\AtomSetup-x64
+Click Install Packages --> Open Installer --> Search language-terraform --> Install
+
+Terraform init : Install the hashicorp aws provider
+ .terraform folder is created
+.terraform.lock.hcl tf file is created
+
+terraform plan 
+
+terraform apply 
+
+terraform destroy
+terraform destroy -target aws_instance.ec2 [where aws_instance : resource name, ec2 : local name]
+
+heidisql.com lightweight sql client pgadmin
+
+Multi-cloud deployment allows us to create the same infra in multiple cloud providers.
