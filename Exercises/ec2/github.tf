@@ -9,7 +9,7 @@
 # }
 #
 # provider "github" {
-#   token = "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"
+#   token = ""
 # }
 #
 # resource "github_repository" "example" {
